@@ -1,0 +1,14 @@
+<!-- <p>{{todo.sr_no}} - {{todo.todo_title}} - {{todo.description}}</p> -->
+
+<div class="container-flex">
+    <div class="todo-box shadow-lg p-3 mb-5 bg-white rounded">
+        <div class="header-line">
+            <!-- <span class="sr-no"> {{todo.sr_no}} </span> -->
+            <h2> {{todo.todo_title}} </h2>
+        </div>
+        <hr class='hr' width="100%">
+        <div class="desc shadow-lg p-3 mb-5 bg-white rounded"> {{todo.description}} </div>
+        <!-- <app-delete-btn></app-delete-btn> -->
+        <button class="btn btn-danger my-3" (click)="onClick(todo)">Delete</button>
+    </div>
+</div>
